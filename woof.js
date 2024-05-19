@@ -1,1 +1,1 @@
-<img srcset="/monitor" srcset="/monitor">
+<img src="http://127.0.0.1/monitor">
